@@ -1,0 +1,18 @@
+.session {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.session-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.session-info {
+  max-width: 800px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

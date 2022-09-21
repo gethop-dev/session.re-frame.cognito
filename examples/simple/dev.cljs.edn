@@ -1,0 +1,6 @@
+^{:watch-dirs ["src" "../../src"]
+  :css-dirs ["resources/public/css"]
+  :auto-testing true}
+{:main simple.core
+ :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true}
+ :preloads [day8.re-frame-10x.preload]}
