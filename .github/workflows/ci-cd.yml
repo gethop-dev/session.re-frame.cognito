@@ -38,11 +38,13 @@ jobs:
       - name: Check formatting
         run: lein cljfmt check
 
+      # FIXME: Add --lint test option once we have tests.
       - name: Lint
-        run: clj-kondo --lint src && lein eastwood
+        run: clj-kondo --lint src
 
-      - name: Test
-        run: lein test :all
+      # FIXME: Uncomment once we have tests.
+      # - name: Test
+      #   run: lein test :all
 
       - name: Deploy Jar to Clojars
         if: contains(github.ref, 'refs/tags/')

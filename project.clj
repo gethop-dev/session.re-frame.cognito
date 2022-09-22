@@ -24,13 +24,5 @@
                                           [cider/piggieback "0.5.1"]]
                            :resource-paths ["target"]
                            :clean-targets ^{:protect false} ["target"]
-                           :plugins [[jonase/eastwood "1.2.3"]
-                                     [lein-cljfmt "0.8.0"]
-                                     [day8.re-frame/re-frame-10x "1.2.2"]]}
-             :eastwood {:linters [:all]
-                        :exclude-linters [:keyword-typos
-                                          :boxed-math
-                                          :non-clojure-file
-                                          :unused-namespaces
-                                          :performance]
-                        :debug [:progress :time]}})
+                           :plugins [[lein-cljfmt "0.8.0"]
+                                     [day8.re-frame/re-frame-10x "1.2.2"]]}})
