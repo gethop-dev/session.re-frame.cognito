@@ -1,3 +1,7 @@
+;; This Source Code Form is subject to the terms of the Mozilla Public
+;; License, v. 2.0. If a copy of the MPL was not distributed with this
+;; file, You can obtain one at http://mozilla.org/MPL/2.0/
+
 (ns dev.gethop.session.re-frame.cognito.action.forgot-password
   (:require [cljsjs.amazon-cognito-identity-js]
             [dev.gethop.session.re-frame.cognito.state :as state]

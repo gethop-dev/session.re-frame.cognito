@@ -1,3 +1,7 @@
+;; This Source Code Form is subject to the terms of the Mozilla Public
+;; License, v. 2.0. If a copy of the MPL was not distributed with this
+;; file, You can obtain one at http://mozilla.org/MPL/2.0/
+
 (ns simple.view.forgot-password-confirmation
   (:require [dev.gethop.session.re-frame.cognito.action.forgot-password :as session.forgot-password]
             [re-frame.core :as rf]
