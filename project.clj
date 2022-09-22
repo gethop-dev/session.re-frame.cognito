@@ -1,4 +1,4 @@
-(defproject dev.gethop/session.re-frame.cognito "0.1.0-SNAPSHOT"
+(defproject dev.gethop/session.re-frame.cognito "0.1.0-alpha"
   :description "Re-frame library for session management using AWS Cognito"
   :url "https://github.com/gethop-dev/session.re-frame.cognito"
   :license {:name "Mozilla Public License 2.0"
