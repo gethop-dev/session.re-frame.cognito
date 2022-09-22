@@ -34,10 +34,10 @@ The `on-failure-evt` will get the reason of the failure as a `keyword` argument.
 ``` clojure
 (require '[dev.gethop.session.re-frame.cognito.action.register :as session.register])
 (rf/dispatch [::session.register/user-register
-                    {:username "user" :password "pass"}
-                    {:name "John" :surname "Doe"}
-                   {:on-success-evt [::register-success]
-                    :on-failure-evt [::register-failure]}])
+              {:username "user" :password "pass"}
+              {:name "John" :surname "Doe"}
+              {:on-success-evt [::register-success]
+               :on-failure-evt [::register-failure]}])
 ```
 Arguments:
 - credentials: `username` and `password`
