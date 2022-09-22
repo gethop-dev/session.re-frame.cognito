@@ -1,6 +1,6 @@
-(defproject dev.gethop/session.cognito "0.1.0-SNAPSHOT"
+(defproject dev.gethop/session.re-frame.cognito "0.1.0-SNAPSHOT"
   :description "Re-frame library for session management using AWS Cognito"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/gethop-dev/session.re-frame.cognito"
   :license {:name "Mozilla Public License 2.0"
             :url "https://www.mozilla.org/en-US/2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]
