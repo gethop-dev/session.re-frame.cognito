@@ -7,12 +7,12 @@
                  [re-frame "1.2.0"]
                  [cljsjs/amazon-cognito-identity-js "5.2.8-0"]]
   :deploy-repositories [["snapshots" {:url "https://clojars.org/repo"
-                                      :username :env/clojars_username
-                                      :password :env/clojars_password
+                                      :username :env/CLOJARS_USERNAME
+                                      :password :env/CLOJARS_PASSWORD
                                       :sign-releases false}]
                         ["releases"  {:url "https://clojars.org/repo"
-                                      :username :env/clojars_username
-                                      :password :env/clojars_password
+                                      :username :env/CLOJARS_USERNAME
+                                      :password :env/CLOJARS_PASSWORD
                                       :sign-releases false}]]
   :aliases {"fig:build" ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]
             "fig:min"   ["run" "-m" "figwheel.main" "-O" "advanced" "-bo" "dev"]}
