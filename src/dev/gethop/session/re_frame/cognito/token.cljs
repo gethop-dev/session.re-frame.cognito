@@ -53,7 +53,7 @@
                     (let [id-token (.getIdToken user-session)
                           jwt-token (.getJwtToken id-token)
                           token-exp (.getExpiration id-token)
-                          id-token-payload (.-payload id-token)]
+                          id-token-payload (js->clj (.decodePayload id-token))]
                       (when (and user-session id-token jwt-token token-exp)
                         {:current-user current-user
                          :user-session user-session
