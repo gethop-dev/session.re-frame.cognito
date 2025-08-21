@@ -8,9 +8,9 @@
 
 (rf/reg-event-fx
  ::generic-success
- (fn [_ [_ on-success-evt]]
+ (fn [_ [_ on-success-evt result]]
    (if on-success-evt
-     {:dispatch on-success-evt}
+     {:dispatch (conj on-success-evt result)}
      {})))
 
 (rf/reg-event-fx

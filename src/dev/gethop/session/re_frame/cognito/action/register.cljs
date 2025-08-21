@@ -39,10 +39,10 @@
       @state/cognito-user-obj
       verification-code
       true
-      (fn [error _result]
+      (fn [error result]
         (if error
           (rf/dispatch [::util/generic-failure on-failure-evt error])
-          (rf/dispatch [::util/generic-success on-success-evt])))))))
+          (rf/dispatch [::util/generic-success on-success-evt {:user-id (.userSub result)}])))))))
 
 (rf/reg-event-fx
  ::user-confirm-registration
