@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file. This change
 
 ## [UNRELEASED]
 
+## 0.1.1-alpha - 2025-08-22
+### Changed
+- Now `::user-register` handler in `:on-success-evt` callback will pass map with `:user-id` from cognito signup.
+
 ## 0.1.1-alpha - 2023-07-19
 ### Changed
 - The id-token 'payload' provided by the session coeffect is now a
@@ -15,7 +19,8 @@ All notable changes to this project will be documented in this file. This change
 ### Added
 - Initial commit
 
-[UNRELEASED]:  https://github.com/gethop-dev/session.re-frame.cognito/compare/v0.1.1-alpha...HEAD
+[UNRELEASED]:  https://github.com/gethop-dev/session.re-frame.cognito/compare/v0.1.2-alpha...HEAD
+[0.1.2]:  https://github.com/gethop-dev/session.re-frame.cognito/compare/v0.1.1-alpha...v0.1.2-alpha
 [0.1.1]:  https://github.com/gethop-dev/session.re-frame.cognito/compare/v0.1.0-alpha...v0.1.1-alpha
 [0.1.0]: https://github.com/gethop-dev/session.re-frame.cognito/releases/tag/v0.1.0-alpha
 =======
